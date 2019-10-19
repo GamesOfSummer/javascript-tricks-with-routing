@@ -1,70 +1,60 @@
 <template>
-<div id="app">
-  <h1>{{ msg }} with ID {{ $route.params.teamID }}</h1>
-  <hr>
-  <p>
-    Team ID is {{ $route.params.teamID }}
-    $route is made available from Vue.use(VueRouter);
-    <br>
-    teamID should be same as that passed into path:'/Page1/:teamID', component: PageOne
-  </p>
-  <button @click="goHome">Go Home</button>
-</div>
+  <div id="app"></div>
 </template>
 
 <script>
+const turtle = {
+  name: "Bob 🐢",
+  legs: 4,
+  shell: true,
+  type: "amphibious",
+  meal: 10,
+  diet: "berries"
+};
+
+function feed(animal) {
+  const { name, meal, diet } = animal;
+  console.info(`Feed ${name} ${meal} kilos of ${diet}`);
+}
+
 export default {
+  mounted() {
+    var a, b, rest;
+    [a, b] = [10, 20];
 
-  data () {
-    return {
-      msg: 'page 2'
+    console.log(a);
+    // expected output: 10
+
+    console.log(b);
+    // expected output: 20
+
+    [a, b, ...rest] = [10, 20, 30, 40, 50];
+
+    console.log(rest); // expected output: [30,40,50]
+
+    feed(turtle);
+
+    //********************* */
+    const colors = [];
+
+    let firstColor = "white";
+    if (colors.length > 0) {
+      firstColor = colors[0];
     }
-  },
 
-  watch: {
-    '$route' (to, from) {
-      alert(to.params.teamID);
-    }
-  },
+    console.log(firstColor); // => 'white'
 
-  created () {
-    alert(this.$route.params.teamID);
-  },
+    //********************* */
+    const colors2 = [];
 
-  methods: {
-    goHome (){
-      this.$router.push('/');
-    }
+    const [firstColor2 = "white"] = colors2;
+    console.log(firstColor2); // => 'white'
+
+    //********************* */
+    const colors3 = [];
+
+    const [, secondColor = "black"] = colors3;
+    console.log(secondColor); // => 'black'
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1,
-h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-</style>
