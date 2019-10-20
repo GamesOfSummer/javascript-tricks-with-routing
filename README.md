@@ -22,6 +22,11 @@
 -   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 -   https://dmitripavlutin.com/5-interesting-uses-javascript-destructuring/
 
+# JS Google Maps -
+
+-   https://medium.com/founders-factory/building-a-custom-google-map-component-with-vue-js-d1c01ddd0b0a
+-   https://alligator.io/vuejs/vue-google-maps/
+
 ## Build Setup
 
 ```bash

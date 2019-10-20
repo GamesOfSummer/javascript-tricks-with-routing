@@ -21,13 +21,15 @@
 </template>
 
 <script>
+const marker = { lat: 32.934361, lng: -96.84965 };
+
 export default {
   name: "Page3",
   data() {
     return {
-      // default to Montreal to keep it simple
-      // change this to whatever makes sense
-      center: { lat: 45.508, lng: -73.587 },
+      //32.934361, -96.849650
+
+      center: { lat: 32.934361, lng: -96.84965 },
       markers: [],
       places: [],
       currentPlace: null
@@ -54,6 +56,7 @@ export default {
           lat: this.currentPlace.geometry.location.lat(),
           lng: this.currentPlace.geometry.location.lng()
         };
+
         this.markers.push({ position: marker });
         this.places.push(this.currentPlace);
         this.center = marker;
