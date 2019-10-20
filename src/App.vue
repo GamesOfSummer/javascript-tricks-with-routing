@@ -5,6 +5,8 @@
     <hr />
     <router-link to="/">Home</router-link>
     <br />
+    <router-link to="/Page0/">Page Zero - Console tricks</router-link>
+    <br />
     <router-link to="/Page1/">Page One - Exports</router-link>
     <br />
     <router-link to="/Page2/">Page Two - Destructuring</router-link>
