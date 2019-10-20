@@ -2,8 +2,15 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 import Routerjs from './routes';
+import * as VueGoogleMaps from 'vue2-google-maps';
 
 Vue.use(VueRouter);
+
+Vue.use(VueGoogleMaps, {
+    load: {
+        libraries: 'places' // necessary for places input
+    }
+});
 
 // now how do we get route our application
 const router = new VueRouter({
