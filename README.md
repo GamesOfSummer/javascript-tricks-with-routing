@@ -27,6 +27,26 @@
 -   https://medium.com/founders-factory/building-a-custom-google-map-component-with-vue-js-d1c01ddd0b0a
 -   https://alligator.io/vuejs/vue-google-maps/
 
+# History of JS
+
+-   https://www.youtube.com/watch?v=Sh6lK57Cuk4
+
+-   Written in 10 days
+-   Tried to use Java, thnought it was a bad idea
+-   Flexible multi-papdym language, that developers could mold what they needed
+-   Started as Mocha, then Livescript, then Javascript
+
+-   looked down upon since people just wrote pop-up spam with it
+
+-   ecma - European Computer Manufacturers Association, used because Microsoft fragmented with JScript
+
+-   ES3 - introduced '==='
+-   ES4 - failed, stalled for ten years
+
+-   2006 - JQuery tried to stanndized everything between all browsers
+
+-   Coffeescript - stated transpiling, important for ES6. It's a verb that means one language to another, same level of abstraaction. C# goes to binary, TS goes to JS
+
 ## Build Setup
 
 ```bash
