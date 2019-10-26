@@ -13,6 +13,8 @@
     <br />
     <router-link to="/Page3/">Page Two -Google Maps</router-link>
     <br />
+    <router-link to="/Regex/">Regex</router-link>
+    <br />
     <router-link to="/Page2/10">Page Two with ID 10</router-link>
     <br />
     <router-link to="/Page2/20">Page Two with ID 20</router-link>
