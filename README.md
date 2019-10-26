@@ -47,6 +47,10 @@
 
 -   Coffeescript - stated transpiling, important for ES6. It's a verb that means one language to another, same level of abstraaction. C# goes to binary, TS goes to JS
 
+# JS Bootcamp
+
+-   Var IS BAD, do NOT USE IT. It has global scope. Use `let` and `const` only. Start with const unless you know you'll reassign it.
+
 ## Build Setup
 
 ```bash
