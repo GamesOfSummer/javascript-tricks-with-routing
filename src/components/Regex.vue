@@ -26,10 +26,10 @@ export default {
     // receives a place object via the autocomplete component
     songDecoder(input) {
       let result = input.split('WUB');
+      result = result.filter(x => x).join(' ');
 
       console.table(result);
-
-      console.table(result.filter(x => x));
+      console.info(result);
     }
   }
 };
